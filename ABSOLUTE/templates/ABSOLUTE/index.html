@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>ABSOLUTE  Server</title>
+</head>
+<body>
+    <div class="intro">
+    <video class="video-intro" autoplay="autoplay" loop="loop" muted="auto">
+    <source src="{% static 'img/Elin.mp4' %}" type="video/mp4">
+    </video>
+    </div>
+    <header>
+    <nav>
+    <ul>
+        <li> <a class="logo" href="index.html">ABSOLUTE</a></li>
+        <li> <a href="index.html">Главная</a></li>
+        <li> <a href="#">Новости</a></li>
+        <li> <a href="#">Поддержка</a></li>
+        <li> <a href="#">Форумы</a></li>
+        <li> <a href="review.html">Отзывы</a></li>
+        <li> <a class="login" href="#">Войти</a></li>
+    </ul>
+    </nav>
+    </header>
+    <div class="container">
+        <h1>ABSOLUTE - ИГРОВОЙ СЕРВЕР TERA</h1>  
+    <table>
+    <thead>
+        <tr>
+        <th>Сервер</th>
+        <th>Статус</th>
+        <th>В сети</th>
+    </tr>
+    </thead> 
+    <tr>
+        <td>KEKW</td>
+        <td> <b class="on">On</b></td>
+            <td>10000</td></tr>
+    <tr>
+            <td>Test</td>
+           <td> <b class="off">Off</b></td>
+            <td>0</td>
+        </tr>
+    </table>
+    <p>Уважаемые игроки, сервер открыт в ОБТ режиме, без вайпов (Патч 92.04).
+       <br>Эта версия аналогична RU серверу перед переносом на EU.
+        <br>В игре доступны все расы и классы.</p>
+        <a   href="#" class ="btn"  >Скачать лаунчер</a>
+    </div>
+    </body>
+</html>

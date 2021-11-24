@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/review.css' %}" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Отзывы</title>
+</head>
+<body>
+    {% block content %}
+    <form action="/review_insert" method="POST">
+    {% csrf_token %}
+    <header>
+        <nav>
+        <ul>
+            <li> <a class="logo" href="index.html">ABSOLUTE</a></li>
+            <li> <a href="index.html">Главная</a></li>
+            <li> <a href="#">Новости</a></li>
+            <li> <a href="#">Поддержка</a></li>
+            <li> <a href="#">Форумы</a></li>
+            <li> <a href="#">Отзывы</a></li>
+            <li> <a class="login" href="#">Войти</a></li>
+        </ul>
+        </nav>
+        </header>
+        <img class="bg" src="{% static 'img/ozero_les_sneg_130421_1920x1080.jpg' %}">   
+    <h1>Оставьте свой отзыв!</h1>
+    <div class="form">
+    <p>Ваш e-mail</p>
+    <input type="email" name="email_fb" class="email" placeholder="name@example.com">
+    <p>Ваш отзыв</p>
+    <textarea class="text" name="text_fb" rows="7"></textarea>
+    <button type="submit" class="btn"
+    onclick="alertFunction()">Отправить отзыв</button>
+    </div>
+    <script>
+        function alertFunction() {
+        alert("Спасибо! Ваш отзыв записан!","Спасибо за отзыв!");}
+        </script>
+</body>
+{% endblock %}
+</html>

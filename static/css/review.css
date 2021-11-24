@@ -1,0 +1,84 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style-type: none;
+font-family: 'Montserrat', sans-serif;
+}
+header{
+height:128px;
+max-width: 1390px;
+margin: 0 auto;
+z-index: -3;
+}
+header ul{
+height:40px;
+display:flex;
+text-align:justify;
+justify-content: space-around;
+}
+.logo{
+float:left;
+font-style: normal;
+font-weight: 800;
+font-size: 27px;
+line-height: 21px;
+padding:20px;
+}
+.login{
+height: 34px;
+border: 1px grey solid;
+width: 120px;
+text-align: center;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #fff;
+padding:10px;
+}
+header ul li a{
+text-align:center ;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 60px;
+color: #fff;
+}
+.bg{
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: -4;
+}
+.bg:after{
+content: "";
+display: block;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.616);
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+h1{
+color: #fff;
+text-align: center;
+margin:0 auto;
+}
+p{
+color: #fff;
+}
+.email{
+height: 20px;
+width: 1000px;
+}
+.form{
+margin: 0 auto; 
+width:1000px;
+}
+.btn{
+width: 1000px;
+}
